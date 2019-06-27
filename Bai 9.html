@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function search(a,x) {
+            if (a.indexOf(x)==-1) return -1;
+            let count=0;
+            for (let i in a) {
+                if (x==a[i]) {
+                    count++;
+                }
+            }
+            return count
+        }
+        let arr=[7,8,5,4,6,9,21,8];
+        alert(search(arr,10));
+    </script>
+</body>
+</html>
